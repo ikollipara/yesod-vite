@@ -26,7 +26,7 @@ version:            0.1.0.0
 synopsis:           An integration of vitejs with Yesod
 
 -- A longer description of the package.
--- description: An integration of vite and yesod.
+description: An integration of vite and yesod.
 
 -- URL for the project homepage or repository.
 homepage:           https://github.com/ikollipara/yesod-vite
