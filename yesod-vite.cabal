@@ -26,7 +26,7 @@ version:            0.1.0.0
 synopsis:           An integration of vitejs with Yesod
 
 -- A longer description of the package.
--- description:
+-- description: An integration of vite and yesod.
 
 -- URL for the project homepage or repository.
 homepage:           https://github.com/ikollipara/yesod-vite
@@ -44,8 +44,8 @@ author:             Ian Kollipara
 maintainer:         ian.kollipara@gmail.com
 
 -- A copyright notice.
--- copyright:
-category:           Web
+copyright:          Ian Kollipara, 2026
+category:           Web, Yesod
 build-type:         Simple
 
 -- Extra doc files to be distributed with the package, such as a CHANGELOG or a README.
@@ -78,11 +78,8 @@ library
         text,
         yesod-static ^>=1.6.1.0,
         aeson,
-        unordered-containers,
         containers,
-        hashable,
         bytestring,
-        conduit,
 
     -- Directories containing source files.
     hs-source-dirs:   src
