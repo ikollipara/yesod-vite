@@ -26,7 +26,7 @@ version:            0.1.0.0
 synopsis:           An integration of vitejs with Yesod
 
 -- A longer description of the package.
-description: An integration of vite and yesod.
+description: An integration of vite and yesod. Provides a typeclass YesodVite which enables the viteAsset tag to function.
 
 -- URL for the project homepage or repository.
 homepage:           https://github.com/ikollipara/yesod-vite
@@ -56,6 +56,11 @@ extra-doc-files:    CHANGELOG.md
 
 common warnings
     ghc-options: -Wall
+
+source-repository head
+    type: git
+    location: https://github.com/ikollipara/yesod-vite
+    
 
 library
     -- Import common warning flags.
