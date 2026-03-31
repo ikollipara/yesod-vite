@@ -39,4 +39,4 @@ instance YesodVite App where
   viteRoute :: Route Static -> Route site
   viteRoute = StaticR
 ```
-- Add the @viteAsset \<asset-name\>@ to your default layout.
+- Add the `viteAsset \<asset-name\>` to your default layout.
