@@ -17,9 +17,9 @@
 #
 # snapshot: ./custom-snapshot.yaml
 # snapshot: https://example.com/snapshots/2024-01-01.yaml
-snapshot:
-  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/22/44.yaml
-
+# snapshot:
+#  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/nightly-2026-04-15.yaml
+snapshot: nightly-2025-12-30
 # User packages to be built.
 # Various formats can be used as shown in the example below.
 #
@@ -40,7 +40,9 @@ packages:
 # - git: https://github.com/commercialhaskell/stack.git
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
 #
-# extra-deps: []
+extra-deps:
+  - yesod-static-1.6.1.2
+  - yesod-test-1.6.16
 
 # Override default flag values for project packages and extra-deps
 # flags: {}

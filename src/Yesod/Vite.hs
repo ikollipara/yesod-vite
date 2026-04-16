@@ -20,6 +20,7 @@
 -- The assumption here is that your setup is similar to the default Yesod scaffold.
 -- You will need to have installed both @yesod-static@ and @yesod-vite@ for this to work.
 -- In addition, you will need the static subsite configured, as the route constructor is required.
+--
 -- - Run @npm init -y@ or the equivalent for your build tool.
 --
 -- - Run @npm i -D vite@ or the equivalent for your build tool.
@@ -32,12 +33,12 @@
 --
 -- export default defineConfig({
 --   plugins: [],
---   base: "/static/",
+--   base: "static",
 --   build: {
 --     outDir: path.resolve("./static"),
 --     manifest: "manifest.json",
 --     rollupOptions: {
---       input: path.resolve("./assets/src/app.js"),
+--       input: path.resolve("./assets\/src/app.js"),
 --     },
 --   },
 -- });
@@ -65,6 +66,8 @@ module Yesod.Vite
     decodeManifest,
     gatherAllCSS,
     gatherAllModules,
+    ViteManifestChunk,
+    ViteManifest,
   )
 where
 

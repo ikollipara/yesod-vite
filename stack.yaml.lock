@@ -3,11 +3,24 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/topics/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: yesod-static-1.6.1.2@sha256:b3e72bc0c1fdebb83c0b2edb3ff286c21d1d3e65bbc0a243c9a2c926373f26b4,4418
+    pantry-tree:
+      sha256: 2312f170adf3d50655812d138330887765de05f5468aa3a3d381bb80c39ac45a
+      size: 1700
+  original:
+    hackage: yesod-static-1.6.1.2
+- completed:
+    hackage: yesod-test-1.6.16@sha256:bf3454e57770b3a6a827a76dafb267d57af91745180f75cc3941d7fd63ac5544,3003
+    pantry-tree:
+      sha256: b3456b06cc433bc21355f445062bfdc645143ac99c0a7e47c98325543857f578
+      size: 630
+  original:
+    hackage: yesod-test-1.6.16
 snapshots:
 - completed:
-    sha256: 238fa745b64f91184f9aa518fe04bdde6552533d169b0da5256670df83a0f1a9
-    size: 721141
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/22/44.yaml
-  original:
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/22/44.yaml
+    sha256: a578d98b69e5742eaf2c42d870e9c5011e5f8b5ad216f04ca8f52caadc8bf89c
+    size: 715419
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/nightly/2025/12/30.yaml
+  original: nightly-2025-12-30
